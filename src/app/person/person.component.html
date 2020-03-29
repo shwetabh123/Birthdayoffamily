@@ -1,0 +1,19 @@
+<a   routerLink="/">  <back</a>
+
+<h2>
+
+  Add New Family Member
+</h2>
+
+<form id="formNewPserson" name="formNewPserson" #personData="ngForm" (ngSubmit)="addNewPerson(personData.value)">
+
+<label>Name:</label><input type="text" name="name" id="name" placeholder="name" ngModel><br>
+
+<label>DOB:</label><input type="text" name="dob" id="dob" placeholder="dob" ngModel><br>
+<input type="submit" value="Add Person">
+
+</form>
+
+<br>
+
+<h3 *ngIf= "isAdded">{{confirmationString}}</h3>

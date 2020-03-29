@@ -1,0 +1,35 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+ <div style="text-align: center">
+  <h1>Welcome to {{title}} </h1>
+<img width="350"src="https://i.ytimg.com/vi/pG25XhhEMAo/maxresdefault.jpg">
+<img width="350"src="https://scontent.fblr11-1.fna.fbcdn.net/v/t1.0-9/10686808_834658326574227_6328530574365614719_n.jpg?_nc_cat=108&_nc_sid=e007fa&_nc_ohc=-aTDYXM8xykAX9tTO8X&_nc_ht=scontent.fblr11-1.fna&oh=ca2585d91d04921bd8d7cea521e823aa&oe=5EA6A98D">
+</div>
+
+<a  routerLink= '/person'>+ Add Family Members </a>
+
+
+<h1>
+ Family Members
+
+</h1>
+
+<table  align="center">
+
+  <th>   ID     </th>
+  <th>   Name   </th>
+  <th>   DOB    </th>
+
+<tr *ngFor = "let product of products">
+
+
+  <td>   {{product.id}}   </td>
+     
+<td>   {{product.name}}   </td>
+     
+<td>   {{product.dob}}    </td>
+
+<td  (click)= "deletePerson(product.id)" ><a>DELETE</a>     </td>
+</tr>
+</table></html>
