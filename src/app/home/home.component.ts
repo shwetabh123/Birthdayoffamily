@@ -23,7 +23,7 @@ fetchdata= function (){
 // this.http.get("http://localhost:5556/products").subscribe(
 
 
-  this.http.get("./Birthdayforfamily/products.json").subscribe(
+  this.http.get("https://api.myjson.com/bins/gdens").subscribe(
 
 
 (res: Response)=>{
@@ -43,7 +43,7 @@ if(confirm("Are you sure?")){
 
 
   
-  const url =`${"./Birthdayforfamily/products.json"}/${id}`;
+  const url =`${"https://api.myjson.com/bins/gdens"}/${id}`;
 
 
 return  this.http.delete(url,{ headers: this.headers    }).toPromise()
