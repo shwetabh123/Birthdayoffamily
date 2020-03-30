@@ -9,7 +9,8 @@ import {Http,Response,Headers} from '@angular/http';
 })
 export class PersonComponent implements OnInit {
 
-  API_URL = 'http://localhost:5556';
+  API_URL = 'http://localhost:5555/products';
+ 
 
   constructor(private http:Http) { }
 confirmationString:string="New Person Details are added !!!";
@@ -20,8 +21,8 @@ personObj:object={};
 
 
 
-addNewPerson=function(person){
-
+addNewPerson=function(person)
+{
 
 this.personObj={
 "name":person.name,
@@ -32,7 +33,7 @@ this.personObj={
 // this.http.post("https://api.myjson.com/bins/gdens/", this.personObj).subscribe((res:Response)=>
 
 
-this.http.post(`${this.API_URL}/products`, this.personObj).subscribe((res:Response)=>
+this.http.post(`${this.API_URL}`, this.personObj).subscribe((res:Response)=>
 
 
 {

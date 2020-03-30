@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import {RouterModule } from '@angular/router';
-import { HttpModule } from '@angular/http';
+import { HttpModule,JsonpModule  } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { PersonComponent } from './person/person.component';
 
@@ -18,6 +18,7 @@ import { PersonComponent } from './person/person.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    JsonpModule,
     RouterModule.forRoot([
 
       { path:"", component : HomeComponent },
