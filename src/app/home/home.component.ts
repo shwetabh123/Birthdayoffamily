@@ -11,9 +11,9 @@ import 'rxjs/add/operator/toPromise';
 export class HomeComponent implements OnInit {
   title = 'Birthday-Calender Application';
 
-  // API_URL = 'http://localhost:5555/products';
+   API_URL = 'http://localhost:5555/products';
 
-  API_URL = '/assets/products.json';
+ // API_URL = '/assets/products.json';
 
   
   navItems: any;
