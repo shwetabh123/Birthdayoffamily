@@ -24,7 +24,7 @@ this.personObj={
 
 "dob":person.dob
 }
-this.http.post("http://localhost:5556/products/", this.personObj).subscribe((res:Response)=>
+this.http.post("./Birthdayforfamily/products.json/", this.personObj).subscribe((res:Response)=>
 
 
 {

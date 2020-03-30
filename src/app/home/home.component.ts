@@ -20,7 +20,10 @@ export class HomeComponent implements OnInit {
 
 fetchdata= function (){
 
-this.http.get("http://localhost:5556/products").subscribe(
+// this.http.get("http://localhost:5556/products").subscribe(
+
+  this.http.get("./Birthdayforfamily/products.json").subscribe(
+
 
 (res: Response)=>{
 
@@ -38,7 +41,7 @@ deletePerson= function(id){
 if(confirm("Are you sure?")){
 
 
-  const url =`${"http://localhost:5556/products"}/${id}`;
+  const url =`${"./Birthdayforfamily/products.json"}/${id}`;
 
 
 return  this.http.delete(url,{ headers: this.headers    }).toPromise()
