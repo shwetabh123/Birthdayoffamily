@@ -28,7 +28,7 @@ fetchdata= function (){
 
   //  this.http.get("https://api.myjson.com/bins/gdens").subscribe(
 
-    this.navItems = this.http.get("../products.json").subscribe(
+    this.navItems = this.http.get("assets/products.json").subscribe(
 
 (res: Response)=>{
 
