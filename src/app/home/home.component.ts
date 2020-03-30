@@ -10,6 +10,8 @@ import 'rxjs/add/operator/toPromise';
 })
 export class HomeComponent implements OnInit {
   title = 'Birthday-Calender Application';
+  API_URL = 'http://localhost:5556';
+
   constructor(private http: Http) { }
   id:number;
   private headers=new Headers({'Content-Type':'application/json'    });
@@ -20,10 +22,10 @@ export class HomeComponent implements OnInit {
 
 fetchdata= function (){
 
-// this.http.get("http://localhost:5556/products").subscribe(
+ this.http.get(`${this.API_URL}/products`).subscribe(
 
 
-  this.http.get("https://api.myjson.com/bins/gdens").subscribe(
+  //  this.http.get("https://api.myjson.com/bins/gdens").subscribe(
 
 
 (res: Response)=>{
@@ -43,7 +45,10 @@ if(confirm("Are you sure?")){
 
 
   
-  const url =`${"https://api.myjson.com/bins/gdens"}/${id}`;
+  // const url =`${"https://api.myjson.com/bins/gdens"}/${id}`;
+ 
+  const url =`${this.API_URL}/products}/${id}`;
+
 
 
 return  this.http.delete(url,{ headers: this.headers    }).toPromise()
