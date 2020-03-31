@@ -36,7 +36,7 @@ this.personObj={
 // this.isAdded=true;  console.log(res);
 // })}
 
-this.http.post(this.API_URL,this.personObj).toPromis().then((data:any)=>{
+this.http.post(this.API_URL,this.personObj).toPromise().then((data:any)=>{
 
 
   console.log(data);
