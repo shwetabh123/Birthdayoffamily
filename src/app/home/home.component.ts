@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Http, Response,Headers } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
+import demodata from '../assets/products.json';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,8 @@ import 'rxjs/add/operator/toPromise';
 export class HomeComponent implements OnInit {
   title = 'Birthday-Calender Application';
 // API_URL = 'http://localhost:5555/products';
-  API_URL = './assets/products.json';
+  // API_URL = '../assets/products.json';
+  API_URL='https://my-json-server.typicode.com/shwetabh123/productsnew/products';
 
   navItems: any;
   constructor(private http: Http) { }
@@ -21,7 +23,10 @@ export class HomeComponent implements OnInit {
 fetchdata= function (){
 // this.http.get(`${this.API_URL}/products`).subscribe(
 //  this.http.get("https://api.myjson.com/bins/gdens").subscribe(
-this.navItems = this.http.get(`${this.API_URL}`).subscribe(
+// this.navItems = this.http.get(`${this.API_URL}`).subscribe(
+
+  this.navItems = this.http.get(`${this.API_URL}`).subscribe(
+    
 (res: Response)=>{
  this.products = res.json() ;
 })}

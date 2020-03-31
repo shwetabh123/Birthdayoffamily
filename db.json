@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Shwetabh",
+      "dob": "25/11/1983"
+    },
+    {
+      "id": 2,
+      "name": "Charu",
+      "dob": "31/03/1984"
+    },
+    {
+      "id": 3,
+      "name": "Alka",
+      "dob": "7/11/1957"
+    },
+    {
+      "name": "Brijesh Srivastava",
+      "dob": "31/08/1957",
+      "id": 4
+    },
+    {
+      "name": "Blazemeter",
+      "dob": "31/08/1957",
+      "id": 5
+    },
+    {
+      "name": "PageObject2",
+      "dob": "12/7/1990",
+      "id": 6
+    },
+    {
+      "name": "RESTAssuredTest-FinalUdemy",
+      "dob": "26/11/1985",
+      "id": 7
+    }
+  ]
+}
