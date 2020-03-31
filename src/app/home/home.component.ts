@@ -40,7 +40,7 @@ if(confirm("Are you sure?")){
   const url =`${"https://my-json-server.typicode.com/shwetabh123/productsnew/products"}/${id}`;
    
 
-return  this.http.delete(this.url,{headers: this.headers }).toPromise()
+return  this.http.delete(url,{headers: this.headers }).toPromise()
 .then(()=>
 {
 this.fetchdata();
