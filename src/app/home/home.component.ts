@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Http, Response,Headers } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
-import demodata from '../assets/products.json';
+
 
 @Component({
   selector: 'app-home',
