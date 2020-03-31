@@ -33,7 +33,9 @@ fetchdata= function (){
 deletePerson= function(id){
 if(confirm("Are you sure?")){
  // const url =`${"https://api.myjson.com/bins/gdens"}/${id}`;
-   const url =`${this.API_URL}/${id}`;
+
+   const url =`${"https://my-json-server.typicode.com/shwetabh123/productsnew/products"}/${id}`;
+   
 return  this.http.delete(url,{ headers: this.headers    }).toPromise()
 .then(()=>{
 this.fetchdata();
