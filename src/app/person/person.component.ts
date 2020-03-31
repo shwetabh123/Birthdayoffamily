@@ -26,8 +26,9 @@ this.personObj={
 }
 // this.http.post("https://api.myjson.com/bins/gdens/", this.personObj).subscribe((res:Response)=>
 
- this.http.post("https://my-json-server.typicode.com/shwetabh123/productsnew/products/", this.personObj).subscribe(
-  (res:Response)=>
+this.navItems =this.http.post("https://my-json-server.typicode.com/shwetabh123/productsnew/products/", this.personObj).subscribe(
+ 
+ (res:Response)=>
 {
 this.isAdded=true;  console.log(res);
 })}
