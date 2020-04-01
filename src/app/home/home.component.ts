@@ -37,7 +37,7 @@ export class HomeComponent implements OnInit {
 
      // const url = `${'http://localhost:5555/products'}/${id}`;
 
-      return this.http.delete(url, { headers: this.headers }).toPromise()
+      return this.http.delete(`${this.API_URL}`, { headers: this.headers }).toPromise()
         .then(() => {
           this.fetchdata();
         })
