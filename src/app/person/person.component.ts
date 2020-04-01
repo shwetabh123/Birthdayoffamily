@@ -12,7 +12,7 @@ export class PersonComponent implements OnInit {
   //API_URL = 'http://localhost:5555/products';
  
   //  API_URL = './assets/products.json';
-  API_URL1 = 'https://my-json-server.typicode.com/shwetabh123/productsnew/products/';
+  API_URL1 = `https://my-json-server.typicode.com/shwetabh123/productsnew/products/`;
 
 
   navItems: any;

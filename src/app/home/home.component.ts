@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   title = 'Birthday-Calender Application';
  // API_URL = 'http://localhost:5555/products';
   // API_URL = '../assets/products.json';
-  API_URL = 'https://my-json-server.typicode.com/shwetabh123/productsnew/products';
+  API_URL = `https://my-json-server.typicode.com/shwetabh123/productsnew/products`;
  
   navItems: any;
   constructor(private http: Http) { }
@@ -34,7 +34,7 @@ export class HomeComponent implements OnInit {
     if (confirm("Are you sure?")) {
       // const url =`${"https://api.myjson.com/bins/gdens"}/${id}`;
 
-      const url = `${'https://my-json-server.typicode.com/shwetabh123/productsnew/products'}/${this.id}`;
+      const url = `${`https://my-json-server.typicode.com/shwetabh123/productsnew/products`}/${this.id}`;
 
      // const url = `${'http://localhost:5555/products'}/${id}`;
 
