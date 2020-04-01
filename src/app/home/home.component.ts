@@ -34,7 +34,7 @@ export class HomeComponent implements OnInit {
     if (confirm("Are you sure?")) {
       // const url =`${"https://api.myjson.com/bins/gdens"}/${id}`;
 
-      const url = `${`https://my-json-server.typicode.com/shwetabh123/productsnew/products`}/${this.id}`;
+      const url = `${`https://my-json-server.typicode.com/shwetabh123/productsnew/products`}/${id}`;
 
      // const url = `${'http://localhost:5555/products'}/${id}`;
 
