@@ -21,19 +21,9 @@
       "id": 4
     },
     {
-      "name": "Blazemeter",
-      "dob": "31/08/1957",
+      "name": "Ruchi",
+      "dob": "26/11/1983",
       "id": 5
-    },
-    {
-      "name": "PageObject2",
-      "dob": "12/7/1990",
-      "id": 6
-    },
-    {
-      "name": "RESTAssuredTest-FinalUdemy",
-      "dob": "26/11/1985",
-      "id": 7
     }
   ]
 }

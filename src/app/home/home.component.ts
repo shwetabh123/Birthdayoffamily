@@ -11,9 +11,10 @@ import 'rxjs/add/operator/toPromise';
 })
 export class HomeComponent implements OnInit {
   title = 'Birthday-Calender Application';
-  // API_URL = 'http://localhost:5555/products';
+ //  API_URL = 'http://localhost:5555/products';
   // API_URL = '../assets/products.json';
   API_URL = 'https://my-json-server.typicode.com/shwetabh123/productsnew/products';
+ 
   navItems: any;
   constructor(private http: Http) { }
   id: number;
@@ -31,7 +32,11 @@ export class HomeComponent implements OnInit {
   deletePerson = function (id) {
     if (confirm("Are you sure?")) {
       // const url =`${"https://api.myjson.com/bins/gdens"}/${id}`;
-      const url = `${"https://my-json-server.typicode.com/shwetabh123/productsnew/products"}/${id}`;
+
+      const url = `${'https://my-json-server.typicode.com/shwetabh123/productsnew/products'}/${id}`;
+
+     // const url = `${'http://localhost:5555/products'}/${id}`;
+
       return this.http.delete(url, { headers: this.headers }).toPromise()
         .then(() => {
           this.fetchdata();
