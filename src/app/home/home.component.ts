@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
   {
     // this.http.get(`${this.API_URL}/products`).subscribe(
     //  this.http.get("https://api.myjson.com/bins/gdens").subscribe(
-    this.navItems = this.http.get(`${this.API_URL}`).subscribe(
+    this.navItems = this.http.get(`https://my-json-server.typicode.com/shwetabh123/productsnew/products`).subscribe(
       (res: Response) => {
         this.products = res.json();
       }
